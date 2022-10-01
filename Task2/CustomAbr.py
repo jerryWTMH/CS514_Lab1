@@ -15,5 +15,5 @@ class CustomAbr(sabre.Abr):
         while (quality + 1 < len(bitrates) and abs(quality - self.myQ) < 2 and 
                bitrates[quality + 1] <= throughput):
             quality += 1
-        self.MQ = quality
+        self.myQ = quality
         return (quality, 0)
