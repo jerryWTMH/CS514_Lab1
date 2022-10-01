@@ -11,4 +11,5 @@ class CustomAbr(sabre.Abr):
                bitrates[quality + 1] <= throughput):
             quality += 1
         #return (quality, 0)
-        return (0,0)
+        #return (0,0)
+        return (len(bitrates) - 1, 0)
